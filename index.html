@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator | Habib Asy Syarif</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>BMI Calculator</h1>
+
+      <!-- Form Section -->
+      <section id="form-section">
+        <form>
+          <div class="form-element">
+            <p>
+              <label for="weight-input">Gender</label>
+            </p>
+            <input type="radio" name="gender-option" id="male" /> <label for="male">Male</label> <input type="radio" name="gender-option" id="female" /> <label for="female">Female</label>
+          </div>
+          <div class="form-element">
+            <p>
+              <label for="weight-input">Weight</label>
+            </p>
+            <input type="number" name="weight" id="weight-input" />
+          </div>
+          <div class="form-element">
+            <p>
+              <label for="height-input">Height</label>
+            </p>
+            <input type="number" name="height" id="height-input" />
+          </div>
+          <div class="form-element">
+            <p>
+              <label for="age-input">Age</label>
+            </p>
+            <input type="number" name="age" id="age-input" />
+          </div>
+          <div class="form-element">
+            <button type="button" id="count-btn">Count</button>
+            <button type="button" id="reset-btn">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Result Section -->
+      <section id="result-section">
+        <center>
+          <div class="show-result">
+            <h2 id="result">0</h2>
+            <p class="result-desc underweight">Underweight</p>
+            <p class="result-desc normal">Normal</p>
+            <p class="result-desc overweight">Overweight</p>
+            <p class="result-desc obese">Obese</p>
+          </div>
+        </center>
+        <div class="result-summary underweight">
+          <p><b>You are underweight!</b></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi architecto aliquam, in quibusdam quod numquam sequi maiores unde quasi voluptatum ea sapiente! Ipsum illum tempora voluptas ea soluta beatae!</p>
+        </div>
+        <div class="result-summary normal">
+          <p><b>You are normal!</b></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi architecto aliquam, in quibusdam quod numquam sequi maiores unde quasi voluptatum ea sapiente! Ipsum illum tempora voluptas ea soluta beatae!</p>
+        </div>
+        <div class="result-summary overweight">
+          <p><b>You are overweight!</b></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi architecto aliquam, in quibusdam quod numquam sequi maiores unde quasi voluptatum ea sapiente! Ipsum illum tempora voluptas ea soluta beatae!</p>
+        </div>
+        <div class="result-summary obese">
+          <p><b>You are obese!</b></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi architecto aliquam, in quibusdam quod numquam sequi maiores unde quasi voluptatum ea sapiente! Ipsum illum tempora voluptas ea soluta beatae!</p>
+        </div>
+        <div>
+          <button id="back-btn">Back</button>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
